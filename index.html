@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>علی اصغر</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.8;
+  direction: rtl;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #00ff88, transparent),
+    radial-gradient(1px 1px at 60% 70%, #00ff88, transparent),
+    radial-gradient(2px 2px at 80% 10%, #00cc66, transparent),
+    radial-gradient(1px 1px at 40% 90%, #00ff88, transparent),
+    radial-gradient(1px 1px at 90% 50%, #00cc66, transparent);
+  opacity: 0.5;
+  animation: twinkle 6s infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes twinkle { from { opacity: 0.3; } to { opacity: 0.7; } }
+header { position: relative; z-index: 1; text-align: center; padding: 50px 20px 30px; }
+header h1 {
+  font-size: 2.5rem; font-weight: 900;
+  background: linear-gradient(90deg, #00ff88, #00cc66, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+header p { font-size: 1rem; color: #888; }
+.avatar {
+  width: 110px; height: 110px; margin: 0 auto 25px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ff88, #004d2e);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; font-weight: 900; color: #0a0a0a;
+  box-shadow: 0 0 40px rgba(0,255,136,0.5);
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 40px rgba(0,255,136,0.5); }
+  50% { box-shadow: 0 0 70px rgba(0,255,136,0.9); }
+}
+section { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+h2 { font-size: 1.6rem; color: #00ff88; margin-bottom: 20px; text-align: center; }
+h2::after {
+  content: ''; display: block; width: 60px; height: 3px;
+  background: #00ff88; margin: 12px auto 0; border-radius: 3px;
+}
+.about-text { text-align: center; color: #bbb; font-size: 1rem; }
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+}
+.skill {
+  background: rgba(0, 255, 136, 0.05);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 15px; padding: 20px; text-align: center;
+  transition: all 0.3s;
+}
+.skill:hover { background: rgba(0, 255, 136, 0.15); transform: translateY(-5px); }
+.skill .icon { font-size: 2rem; margin-bottom: 8px; }
+.skill h3 { color: #00ff88; font-size: 1rem; }
+.special { position: relative; z-index: 1; text-align: center; padding: 40px 20px; margin: 20px auto; max-width: 900px; }
+.sword {
+  font-size: 4rem; display: inline-block;
+  filter: drop-shadow(0 0 25px rgba(0,255,136,0.9));
+  animation: glow 2.5s infinite alternate;
+}
+@keyframes glow {
+  from { filter: drop-shadow(0 0 20px rgba(0,255,136,0.6)); }
+  to { filter: drop-shadow(0 0 45px rgba(0,255,136,1)); }
+}
+.num313 {
+  font-size: 4.5rem; font-weight: 900; letter-spacing: 8px;
+  background: linear-gradient(180deg, #00ff88, #008855);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1; margin-top: 15px;
+}
+.special p { margin-top: 15px; color: #00cc66; font-size: 1rem; }
+.divider {
+  width: 90%; max-width: 700px; height: 2px;
+  background: linear-gradient(90deg, transparent, #00ff88, transparent);
+  margin: 20px auto; position: relative; z-index: 1;
+}
+.contact { text-align: center; }
+.contact-btns {
+  display: flex; gap: 10px; justify-content: center;
+  flex-wrap: wrap; margin-top: 20px;
+}
+.btn {
+  display: inline-block; padding: 12px 24px;
+  background: transparent; border: 2px solid #00ff88;
+  color: #00ff88; border-radius: 50px;
+  text-decoration: none; font-weight: 700; font-size: 0.9rem;
+  transition: all 0.3s;
+}
+.btn:hover { background: #00ff88; color: #0a0a0a; }
+footer {
+  text-align: center; padding: 30px 20px 10px;
+  color: #555; font-size: 0.85rem;
+  position: relative; z-index: 1;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="avatar">ع</div>
+    <h1>علی اصغر</h1>
+    <p>✨ به سایت شخصی من خوش آمدید ✨</p>
+  </header>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>درباره من</h2>
+    <p class="about-text">سلام! من علی اصغر هستم. این سایت شخصی منه که با کمک هوش مصنوعی ساختم.</p>
+  </section>
+
+  <section>
+    <h2>علاقه‌مندی‌ها</h2>
+    <div class="skills">
+      <div class="skill"><div class="icon">⚽</div><h3>ورزش</h3></div>
+      <div class="skill"><div class="icon">💻</div><h3>کامپیوتر</h3></div>
+      <div class="skill"><div class="icon">📚</div><h3>مطالعه</h3></div>
+      <div class="skill"><div class="icon">🎮</div><h3>بازی</h3></div>
+    </div>
+  </section>
+
+  <div class="special">
+    <div class="sword">⚔️</div>
+    <div class="num313">۳۱۳</div>
+    <p>به عشق حضرت علی (ع) 🟢</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <section class="contact">
+    <h2>ارتباط با من</h2>
+    <div class="contact-btns">
+      <a href="#" class="btn">📧 ایمیل</a>
+      <a href="#" class="btn">📱 تلگرام</a>
+      <a href="#" class="btn">📷 اینستاگرام</a>
+    </div>
+  </section>
+
+  <footer>ساخته شده با ❤️ و کمک هوش مصنوعی — علی اصغر</footer>
+</body>
+</html>
